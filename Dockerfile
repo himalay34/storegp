@@ -1,8 +1,8 @@
 FROM node:lts-alpine
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json .
 
 RUN npm install
 # If you are building your code for production
@@ -11,8 +11,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-ENV PORT 8080
+ENV PORT 3000
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "npm", "start" ]
