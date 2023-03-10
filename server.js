@@ -1,12 +1,12 @@
 const express = require('express');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 
 const app = express();
 
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: false }));
-
+/*
 // Connect to MongoDB
 mongoose
   .connect(
@@ -17,10 +17,11 @@ mongoose
   .catch(err => console.log(err));
 
 const Item = require('./models/Item');
-
+*/
 app.get('/',(req, res) => {
 	res.send("voila, Nayeem")
 });
+/*
 app.get('/item', (req, res) => {
   Item.find()
     .then(items => res.render('index', { items }))
@@ -34,7 +35,7 @@ app.post('/item/add', (req, res) => {
 
   newItem.save().then(item => res.redirect('/'));
 });
-
+*/
 const port = 3000;
 
 app.listen(port, () => console.log('Server running...'));
