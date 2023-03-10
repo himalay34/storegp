@@ -1,0 +1,10 @@
+envs:
+  - MONGODB_HOST: mongodb
+
+services:
+  - mongodb:
+      tag: 3.6
+      volumes:
+        - name: mongodb_vol
+          mount: /data/db
+      
