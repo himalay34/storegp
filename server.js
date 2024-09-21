@@ -19,7 +19,7 @@ mongoose
 const Item = require('./models/Item');
 */
 app.get('/',(req, res) => {
-	res.send("voila, Nayeem")
+	res.send("hellow wolrd... whats up?")
 });
 /*
 app.get('/item', (req, res) => {
