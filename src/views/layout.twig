@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>
+			{% block title %}eRx
+			{% endblock %}
+		</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+			.window {
+				width: 100 dvw;
+				height: 100 dvh;
+				overflow-y: auto;
+			}
+		</style>
+		{% block styles %}{% endblock %}
+	</head>
+	<body>
+		<div id="app>
+					{% block body %}{% endblock %}
+					</div>
+					<script src=" /vue.min.js"></script>
+		<script src="/auth.js"></script>
+		{% block script %}{% endblock %}
+	</body>
+</html>
