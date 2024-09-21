@@ -1,5 +1,5 @@
 module.exports = {
-  port: process.env.PORT || 8080,
+  port: process.env.PORT || 3000,
   domain: process.env.DETA_SPACE_APP_HOSTNAME || "localhost",
   secret: process.env.PASSPORT_SECRET || "F0rh@dzxy987Vsadxiew6",
   refreshTokenSecret:
